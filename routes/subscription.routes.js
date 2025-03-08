@@ -16,4 +16,6 @@ subRouter.get('/user/:id', (req, res) => res.send({title: 'Get all subscriptions
 
 subRouter.put('/:id/cancel', (req, res) => res.send({title: 'Cancel a subscription by a user'}));
 
+subRouter.get('/upcoming-renewals', (req, res) => res.send({title: 'Get all upcoming renewals'}));
+
 export default subRouter;
